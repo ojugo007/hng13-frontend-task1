@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile card</title>
+</head>
+<body>
+    <div class="container">
+        <article  class="card-wrapper" data-testid="test-profile-card" tabindex="0">
+            
+            <figure class="avatar">
+                <img src="/assests/ojsilas.jpg" alt="avatar of silas ojugo">
+            </figure>
+
+            <main class="bio-wrapper">
+                <h2 data-testid="test-user-name">Ojugo Silas</h2>
+                <p data-testid="test-user-bio">I’m a full-stack MERN developer passionate about building scalable, user-focused web applications.</p>
+                <span id="timer" data-testid="test-user-time">19093030</span>
+                <nav>
+                    <h3>connect on socials</h3>
+                    
+                    <div class="links" data-testid="test-user-social-links">
+                        <a href="https://x.com/SilasOjugo" rel="noopener noreferrer" target="_blank" tabindex="0" data-testid="test-user-social-twitter">
+                            <i class="fa-brands fa-square-x-twitter fa-2x"></i> 
+                        </a>
+    
+                        <a href="https://www.linkedin.com/in/silas-ojugo" rel="noopener noreferrer" target="_blank" tabindex="0" data-testid="test-user-social-linkedin">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+    
+                        <a href="https://www.instagram.com/im_ojhay?igsh=bm5vZHFlMTg3OGFw" rel="noopener noreferrer" target="_blank" tabindex="0" data-testid="test-user-social-instagram">
+                            <i class="fa-brands fa-square-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </nav>
+                <div class="card-bottom">
+                    <section data-testid="test-user-hobbies">
+                        <p>Hobbies :</p>
+                        <ul>
+                            <li>Cooking 😍</li>
+                            <li>Exploring new ideas ⛏️</li>
+                            <li>Coding 🖥️</li>
+                            <li>Movies 🍿</li>
+                        </ul>
+                    </section>
+                    <section data-testid="test-user-dislikes">
+                        <p>Dislikes :</p>
+                        <ul>
+                            <li>Loud chaos 🫨</li>
+                            <li>dishonesty 🤥</li>
+                            <li>unnecessary drama 🤷‍♂️</li>
+                            <li>slow internet 🐌</li>
+                        </ul>
+                    </section>
+
+                </div>
+
+            </main>
+        </article>
+
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/c6851a02b4.js" crossorigin="anonymous"></script>
+<script src="/main.js"></script>
+</html>
