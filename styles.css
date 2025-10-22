@@ -21,6 +21,25 @@ body {
     min-height: 100vh;
 }
 
+.top-nav{
+    width: 80%;
+    margin: 0 auto 10px;
+    background-color: black;
+    border: 1px solid #f8fafc61;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+}
+.top-nav a{
+    color: #E4D00A;
+    font-size: 16;
+    font-weight: 300;
+    font-family: "Orbitron", sans-serif;
+}
 .card-wrapper {
     display: flex;
     align-items: flex-start;
@@ -45,6 +64,7 @@ body {
 .bio-wrapper h2 {
     font-size: 30px;
     font-weight: 600;
+    font-family: "Orbitron", sans-serif;
     text-transform: uppercase;
 }
 
@@ -129,6 +149,9 @@ nav a i {
     .card-wrapper{
         width: 100%;
     }
+    .top-nav{
+        width: 100%;
+    }
     .card-bottom {
         flex-direction: column;
         gap: 20px;
@@ -141,6 +164,9 @@ nav a i {
 @media only screen and (max-width : 420px) {
     .card-wrapper{
         padding: 15px;
+    }
+    .top-nav{
+        gap: 20px;
     }
 
 }
