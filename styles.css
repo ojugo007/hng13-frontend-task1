@@ -11,6 +11,7 @@ body {
     font-family: "Poppins", sans-serif;
     max-width: 100%;
     height: 100%;
+    background: black;
 }
 
 .container {
@@ -120,18 +121,120 @@ nav a i {
     font-weight: 200;
 }
 
+
+/* about page */
+.about-container{
+    padding: 50px 0;
+}
+.about-wrapper{
+    background-color: black;
+    color: #fff;
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.about-wrapper>section{
+    margin-bottom: 35px;
+}
+.about-wrapper>section h3{
+    margin-bottom: 20px;
+    font-family: "Orbitron", sans-serif;
+}
+.about-wrapper>section p{
+    font-weight: 200;
+}
+.about-container-col{
+    display: flex;
+    gap: 70px;
+    border: 1px solid #f8fafc61;
+    padding: 30px;
+    border-radius: 5px;
+}
+.about-wrapper .about-bio{
+    flex: 1;
+}
+.about-wrapper .about-bio h1{
+    font-family: "Orbitron", sans-serif;
+    font-size: 30px;
+}
+.goals-wrapper ul{
+    list-style-position: inside;
+    list-style-type:circle;
+}
+.goals-wrapper h2{
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+   
+}
+.about-image-wrapper{
+    max-width: 350px;
+    height: 350px;
+     border-radius: 5px;
+    overflow: hidden;
+    flex: 1;
+}
+.about-image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* contact form */
+.form-container{
+    width: 100%;
+    padding: 50px 20px;
+}
+.form-wrapper{
+    width: 80%;
+    padding: 35px;
+    color: white;
+    border: 1px solid #f8fafc61;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-control label{
+    font-family: "orbitron", sans-serif;
+    color: #E4D00A;
+}
+.form-control input, textarea{
+    padding: 15px 8px;
+    border-radius: 5px;
+    border: 1px solid #f8fafc61;
+    background: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+button{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    background-color: #E4D00A;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 @media only screen and (max-width : 856px) {
     .container{
         padding: 50px 0;
     }
-    .card-wrapper {
+    .card-wrapper, .about-container-col {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
     }
-
+    
+    
     .bio-wrapper{
         text-align: center;
     }
@@ -141,14 +244,18 @@ nav a i {
         gap: 0px;
         justify-content: space-evenly;
     }
+    .form-wrapper{
+        width: 80%;
+    }
 }
 @media only screen and (max-width : 546px) {
-    .container{
+    .container, .about-container{
         padding: 50px 20px;
     }
-    .card-wrapper{
+    .card-wrapper, .about-wrapper{
         width: 100%;
     }
+   
     .top-nav{
         width: 100%;
     }
@@ -160,9 +267,18 @@ nav a i {
     .bio-wrapper h2 {
         font-size: 24px;
     }
+
+    .form-container{
+        padding: 50px 20px;
+    }
+    .form-wrapper{
+        width: 100%;
+        padding: 30px 15px;
+    }
+
 }
 @media only screen and (max-width : 420px) {
-    .card-wrapper{
+    .card-wrapper, .about-container-col{
         padding: 15px;
     }
     .top-nav{

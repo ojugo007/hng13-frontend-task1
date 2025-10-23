@@ -1,5 +1,6 @@
 const timer = document.getElementById("timer")
 
+
 const setTimer = () =>{
     timer.innerText = Date.now() + " ms"
 }

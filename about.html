@@ -1,31 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>About Me</title>
 </head>
+
 <body>
-<!-- A reflective page where you share your thoughts.
-Required sections (data-testid for each):
-Bio — test-about-bio
-Goals in this program — test-about-goals
-Areas of low confidence — test-about-confidence
-Note to future self — test-about-future-note
-Extra thoughts — test-about-extra
-Semantic structure:
-Wrap with <main data-testid="test-about-page">.
-Use <section> for each area.
-Use proper headings (<h2>, <h3>) for clarity.
-:white_check_mark: Acceptance Criteria!-->
+    <div class="about-container">
 
-    <main data-testid="test-about-page">
-        <section data-testid="test-about-bio">
-            <h1>About OJ</h1>
-            <p></p>
+        <nav class="top-nav">
+            <a href="/" tabindex="0" rel="noopener noreferrer" target="_blank" >Home</a>
 
+            <a href="/contact.html" tabindex="0" rel="noopener noreferrer" target="_blank" >Get in touch</a> 
+ 
+        </nav>
+        <main data-testid="test-about-page" class="about-wrapper">
+            <section class="about-container-col">
+                <div class="about-image-wrapper">
+                    <img src="https://res.cloudinary.com/dw94gbpfs/image/upload/v1761141773/1000022450_ea5the.jpg"
+                    alt="ojugo silas image">
+                </div>
+                <section data-testid="test-about-bio" class="about-bio">
+                    <h1>Bio</h1>
+                    <p>I’m Ojugo Silas, a full-stack web developer who loves building clean, functional, and scalable apps.
+                        When I’m not buried in React or Express, I’m deep in basketball debates reminding everyone that Bill
+                        Russell is the real GOAT. My playlist? A weird mix of old-school tracks that somehow make debugging
+                        feel like jazz.</p>
+                        
+                    </section>
+                </section>
+                <section data-testid="test-about-goals" class="goals-wrapper">
+                    <h2>My goals</h2>
+                    <ul>
+                        <li>Build real-world, production-ready projects</li>
+                        <li>Master clean architecture and scalable backend design</li>
+                        <li>Strengthen frontend engineering skills</li>
+                        <li>Enhance problem-solving and algorithmic thinking</li>
+                        <li>Develop strong documentation habits</li>
+                        <li>Build professional connections and mentorship relationships</li>
+                    </ul>
+                </section>
+                <section data-testid="test-about-confidence">
+                    <h3>Areas of Low Confidence</h3>
+                    <p>
+                        I’m working to strengthen my understanding of design patterns and data structures & algorithms. While I
+                        can build functional backend systems, I want to improve how I apply efficient algorithms and structured
+                        design principles to write cleaner, scalable code.
+                        
+                    </p>
+                </section>
+                <section data-testid="test-about-future-note">
+                    <h3>Note to Future Self </h3>
+                    <p>
+                        Dear future me,
+                        Remember how eager you were to grow during HNG13 — to write cleaner code, collaborate better, and not
+                        just build things that work, but things that last. Keep that energy alive. Don’t be afraid to break
+                        things, ask questions, or admit when you’re stuck; that’s where the learning happens.
+                        Also, take pride in how far you’ve come — from debugging late at night to now building solutions that
+                        people actually use. Stay curious, stay humble, and never forget why you started: to create, to learn,
+                        and to make an impact through tech.
+                    </p>
+                </section>
+                <section data-testid="test-about-future-note">
+                    <h3>Note to Future Self </h3>
+                    <p>
+                        Dear future me,</br>
+                        Remember how eager you were to grow during HNG13 — to write cleaner code, collaborate better, and not
+                        just build things that work, but things that last. Keep that energy alive. Don’t be afraid to break
+                        things, ask questions, or admit when you’re stuck; that’s where the learning happens.
+                        Also, take pride in how far you’ve come — from debugging late at night to now building solutions that
+                        people actually use. Stay curious, stay humble, and never forget why you started: to create, to learn,
+                        and to make an impact through tech.
+            </p>
         </section>
-
+        <section data-testid="test-about-extra">
+            <h3>Extra Thoughts</h3>
+            <p>
+                I see the HNG13 Internship as more than just a training program — it’s a chance to test my discipline,
+                teamwork, and creativity under real-world pressure.
+                I want to learn from mentors, share knowledge with peers, and leave with not just better code, but
+                better habits.
+            </p>
+        </section>
+        
     </main>
+</div>
 </body>
+
 </html>

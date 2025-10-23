@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Contact Us</title>
 </head>
 <body>
-    <h1>Contact</h1>
+    <main class=" form-container">
+        <nav class="top-nav contact-nav">
+            <a href="/" tabindex="0" rel="noopener noreferrer" target="_blank" >Home</a> 
+            <a href="/about.html" tabindex="0" rel="noopener noreferrer" target="_blank" >Learn more</a> 
+        </nav>
+        <section class="form-wrapper">
+            <form action="">
+                <div class="form-control">
+                    <label for="fullname">Fullname</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="please enter your full name" data-testid="test-contact-name" required tabindex="0">
+
+                    <span class="error-msg" data-testid="test-contact-error-fullname"></span>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="please enter your email" data-testid="test-contact-email" required tabindex="0">
+
+                    <span class="error-msg" data-testid="test-contact-error-email"></span>
+                </div>
+                <div class="form-control">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="please enter subject of the message" data-testid="test-contact-subject" required tabindex="0">
+
+                    <span class="error-msg" data-testid="test-contact-error-subject"></span>
+                </div>
+                <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="please enter your message" required data-testid="test-contact-message" tabindex="0"></textarea>
+
+                    <span class="error-msg" data-testid="test-contact-error-message"></span>
+                </div>
+
+                <button type="submit" data-testid="test-contact-submit">Send mesage</button>
+
+                <span id="success-msg" data-testid="test-contact-success"></span>
+                
+            </form>
+        </section>
+
+    </main>
+
 </body>
 </html>
